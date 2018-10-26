@@ -138,3 +138,26 @@ rubberDuckA.display()
 
 let redheadDuck = new RedheadDuck('Red-head-duck')
 redheadDuck.display()
+
+class RocketFly implements FlyBehavior {
+  fly(){
+     console.log('this duck can fly by rocket')
+  }
+}
+class HuhuQuack implements QuackBehavior {
+  quack(){
+    console.log('Hu Hu Hu')
+  }
+}
+class RocketDuck extends Duck1 {
+ public flyBehavior:FlyBehavior;
+ public quackBehavior:QuackBehavior;
+ constructor(name:string){
+   super(name)
+   this.flyBehavior = new RocketFly()
+   this.quackBehavior = new HuhuQuack()
+ }
+}
+
+let rocketDuck = new RocketDuck('Rocket-Duck');
+rocketDuck.display()

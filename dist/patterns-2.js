@@ -58,6 +58,7 @@ class Billboard {
         this.humidity = -1000;
         this.pressure = -1000;
         this.weatherCenter = weatherCenter;
+        // 自动注册到气象数据中心
         this.register();
     }
     register() {
@@ -72,7 +73,7 @@ class Billboard {
             console.log(`The temperature is ${this.temperature}.`);
             console.log(`The humidity is ${this.humidity}.`);
             console.log(`The pressure is ${this.pressure}.`);
-            console.log('----------------------------------------');
+            console.log('-----------------------------------');
         }
         else {
             console.log(`-----This is a ${this.name} board-----`);
@@ -93,6 +94,14 @@ let weatherCenter = new WeatherCenter();
 let currentBoard = new Billboard('Current', weatherCenter);
 let statisticsBoard = new Billboard('Statistics', weatherCenter);
 let forecastBoard = new Billboard('Forecast', weatherCenter);
+console.log('-1-');
 weatherCenter.setDatas(24, 12, 80);
+console.log('-2-');
+statisticsBoard.quit();
 weatherCenter.setDatas(25, 13, 70);
+console.log('-3-');
+forecastBoard.quit();
 weatherCenter.setDatas(21, 18, 90);
+console.log('-4-');
+forecastBoard.register();
+weatherCenter.setDatas(29, 21, 100);

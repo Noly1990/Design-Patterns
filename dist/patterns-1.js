@@ -103,3 +103,22 @@ let rubberDuckA = new RubberDuck1('Rubber-Duck-from-ab');
 rubberDuckA.display();
 let redheadDuck = new RedheadDuck('Red-head-duck');
 redheadDuck.display();
+class RocketFly {
+    fly() {
+        console.log('this duck can fly by rocket');
+    }
+}
+class HuhuQuack {
+    quack() {
+        console.log('Hu Hu Hu');
+    }
+}
+class RocketDuck extends Duck1 {
+    constructor(name) {
+        super(name);
+        this.flyBehavior = new RocketFly();
+        this.quackBehavior = new HuhuQuack();
+    }
+}
+let rocketDuck = new RocketDuck('Rocket-Duck');
+rocketDuck.display();
