@@ -1,0 +1,23 @@
+{
+  "name": "design-patterns",
+  "version": "1.0.0",
+  "description": "a patterns ts practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Noly1990/Design-Patterns.git"
+  },
+  "author": "noly1990",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Noly1990/Design-Patterns/issues"
+  },
+  "homepage": "https://github.com/Noly1990/Design-Patterns#readme",
+  "devDependencies": {
+    "@types/node": "^10.12.0"
+  }
+}

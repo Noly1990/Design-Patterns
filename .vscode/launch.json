@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "启动程序",
-            "program": "${workspaceFolder}/dist/patterns-3-2.js",
+            "program": "${workspaceFolder}/dist/patterns-4.js",
             "outFiles": [
                 "${workspaceFolder}/**/*.js"
             ]
